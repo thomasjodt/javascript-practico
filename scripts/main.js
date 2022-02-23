@@ -25,12 +25,14 @@ function circleArea (radius) {
 
 // Interactuación con HTML
 
+let txtAnswer = document.querySelector(".txtAnswer");
 
 function calculateSquarePerimeter () {
     let sqr = document.getElementById("inputSqr");
     let sqrValue = sqr.value;
     let perimeter = sqrPerimeter(sqrValue);
-    alert(perimeter);
+    // alert(perimeter);
+    txtAnswer.innerHTML = `<p>El valor del perímetro es:<br> ${perimeter}</p>`;
 
 }
 
@@ -38,5 +40,6 @@ function calculateSquareArea () {
     let sqr = document.getElementById("inputSqr");
     let sqrValue = sqr.value;
     let area = sqrArea(sqrValue);
-    alert(area);
+    // alert(area);
+    txtAnswer.innerHTML = `<p>El valor del área es:<br> ${area}</p>`;
 }

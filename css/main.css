@@ -27,20 +27,20 @@ header {
 .sqrForm .answer {
     height: 64px;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
 }
 .answer .square {
     border: 4px solid white;
-    height: 48px;
-    width: 48px;
+    height: 42px;
+    width: 42px;
     border-radius: 8px;
-    margin:16px;
 }
 .answer .txtAnswer {
-    width: 60%;
+    width: 150px;
     height: 100%;
-    border: 1px dashed black;
+    box-shadow: inset 4px 4px 8px #00000029, inset -4px -4px 8px #ffffff29;
+    border-radius: 12px;
 }
 .generalForm {
     padding: 24px;
@@ -71,4 +71,9 @@ header {
     font-weight: bold;
     font-size: 16px;
     padding: 12px;
+}
+.txtAnswer p {
+    margin-top: 12px;
+    color: #fff;
+    font-size: 17px;
 }
