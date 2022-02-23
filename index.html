@@ -16,13 +16,12 @@
 
     <main>
         <section class="geometricFigures">
-            <!-- <h2>Figuras Geométricas</h2> -->
-            <article class="sqrForm">
+            <h2>Figuras Geométricas</h2>
+            <article class="box sqrForm">
                 <h2 class="formTitle">Calcula el área y perímetro de un cuadrado</h2>
                 <form class="generalForm" action="">
                     <div class="answer">
-                        <div class="square"></div>
-                        <div class="txtAnswer"></div>
+                        <div class="txtAnswer" id="sqrAnswer"></div>
                     </div>
                     <label for="inputSquare">Escribe cuánto mide cada lado de tu cuadrado.</label>
                     <input type="number" id="inputSqr">
@@ -49,7 +48,19 @@
 
         <section class="sales">
             <h2>Porcentajes y Descuentos</h2>
-            
+            <article class="box priceDiscount">
+                <h2 class="formTitle">Calcula el precio de tus productos con descuento</h2>
+                <form action="" class="generalForm">
+                    <div class="answer">
+                        <div class="txtAnswer" id="saleAnswer"></div>
+                    </div>
+                    <label for="inputPrice">Ingresa el precio de tu producto</label>
+                    <input type="number" id="inputPrice">
+                    <label for="inputSale">Ingresa el DESCUENTO para tu producto</label>
+                    <input type="number" id="inputSale">
+                    <button type="button" onclick="calculateSalePrice()">Calcular el Descuento</button>
+                </form>
+            </article>
         </section>
     </main>
 

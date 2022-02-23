@@ -21,3 +21,5 @@ En esta seccion terminamos de completar el reto de un triangulo isoceles"
 En este taller se hará una calculadora para mostrar el descuento de un elemento.
 ### Parte 1
 En esta sección he creado la sección principal del HTML y las funciones en Javascript que usaré durante este taller.
+### Parte 2 (Final)
+En esta sección la tarjeta con el formulario para que el usuario pueda ejecutar la función sin necesidad de ir a la consola.
