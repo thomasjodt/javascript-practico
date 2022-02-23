@@ -36,3 +36,29 @@ Para esta sección que es Mediana utilicé el método .sort() para ordenar los e
 (a,b) => a-b;
 
 Luego hice una función con una condicional dentro para saber si la cantidad de elementos es par o impar y dependiendo de la respuesta que haga un cálculo y determinar la mediana.
+
+### Parte 3
+
+Para esta sección hice muchos procedimientos, fue el más difícil.
+- En primer lugar se debe declarar la lista con los números.
+- Declarar una variable con valor de un objeto vacío (es donde vamos a guardar nuestro array con los números como clave y la cantidad de veces que se repite como valor).
+- Usar el método .map() para hacer el proceso del punto anterior.
+	
+	array.map(function(element){
+            if(listCount[element]){
+            listCount[element] += 1;
+            } else {
+            listCount[element] =1;
+         }
+        }
+    );
+
+- En este punto ya tendremos un array con los elementos contados.
+- Una vez que hayamos terminado esos procedimientos queda hacer otro array con los elementos mapeados usando la función Object.entries.
+
+	const listCountArray = Object.entries(listCount).sort((a,b) => a[1] -b[1]));
+
+- Finalmente declarar una última variable que será la que contenga el valor de la moda.
+
+	const mode = listCountArray[ListCountArray.length -1][0];
+

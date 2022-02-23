@@ -151,3 +151,28 @@ function calculateAverage (lista) {
     }
     return mediana;
 }
+
+    // Moda
+
+function moda (list) {
+    const listCount = {};
+    const lista = list;
+
+    lista.map(
+        function(element){
+            if(listCount[element]){
+            listCount[element] += 1;
+            } else {
+            listCount[element] =1;
+         }
+        }
+    );
+
+    const listCountArray = Object.entries(listCount).sort((a,b) => a[1]-b[1]);
+    const mode = listCountArray[listCountArray.length-1][0];
+
+    return mode;
+}
+
+// Falta hacer la implementación en HTML
+

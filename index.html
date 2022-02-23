@@ -69,17 +69,38 @@
                     <div class="answer">
                         <div class="txtAnswer" id="saleAnswer"></div>
                     </div>
+
                     <label for="inputPrice">Ingresa el precio de tu producto</label>
                     <input type="number" id="inputPrice">
+
                     <label for="inputSale">Ingresa el DESCUENTO para tu producto</label>
                     <input type="number" id="inputSale">
+
                     <button type="button" onclick="calculateSalePrice()">Calcular el Descuento</button>
+
                 </form>
             </article>
         </section>
 
         <section class="averages">
             <h2>Promedio, mediana y moda</h2>
+
+            <article class="box medians">
+                <h2 class="formTitle">Calcula los Promedios</h2>
+                <form action="" class="generalForm">
+                    <div class="answer">
+                        <div class="txtAnswer" id="averagesAnswer"></div>
+                    </div>
+                    <label for="inputList">Ingresa una lista de números:</label>
+                    <input type="text" id="inputList">
+                    
+                    <button type="button" onclick="calculateAverage()">Calcular el Promedio</button>
+
+                    <button type="button" onclick="calculateMedian()">Calcular la Mediana</button>
+                    
+                    <button type="button" onclick="calculateMode()">Calcular la Moda</button>
+                </form>
+            </article>
         </section>
     </main>
 
