@@ -122,3 +122,32 @@ function calculateSalePrice () {
     let list = salePrice(priceValue, saleValue);
     txtSaleAnswer.innerHTML = `<p>El valor final es:<br> S/. ${list}</p>`;
 }
+
+// Promedios, Mediana y Moda
+
+    //Promedio
+function calculateAverage (lista) {
+    const sumaLista = lista.reduce(function(valorAcumulado = 0, nuevoElemento) {
+        return valorAcumulado + nuevoElemento;
+    });
+
+    const promedioLista = sumaLista/lista.length;
+    return promedioLista;
+}
+
+    //Mediana
+
+    
+    function calculateMedian (lista) {
+        let cantidad = Math.floor(lista.length)/2;
+        let mediana = 0;
+        lista.sort((a,b)=> a-b);
+
+    if (lista.length%2 == 0) {
+        mediana = (lista[cantidad] + lista[cantidad -1])/2;
+    }
+    else {
+        mediana = lista[cantidad];
+    }
+    return mediana;
+}
