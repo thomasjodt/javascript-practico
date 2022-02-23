@@ -3,7 +3,7 @@ function sqrPerimeter(side){
     return `${side*4} cm `;
 }
 function sqrArea(side){
-    return `${Math.pow(side,2)} cm^2`;
+    return `${Math.pow(side,2)} cm2`;
 }
 
 // Código del Triángulo
@@ -21,4 +21,22 @@ function circlePerimeter (radius) {
 }
 function circleArea (radius) {
     return `El área del círculo es: ${(Math.PI*(Math.pow(radius,2))).toFixed(2)} cm`
+}
+
+// Interactuación con HTML
+
+
+function calculateSquarePerimeter () {
+    let sqr = document.getElementById("inputSqr");
+    let sqrValue = sqr.value;
+    let perimeter = sqrPerimeter(sqrValue);
+    alert(perimeter);
+
+}
+
+function calculateSquareArea () {
+    let sqr = document.getElementById("inputSqr");
+    let sqrValue = sqr.value;
+    let area = sqrArea(sqrValue);
+    alert(area);
 }

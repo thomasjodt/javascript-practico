@@ -10,3 +10,5 @@ Repositorio del curso práctico de Javascript de Platzi
 He creado las operaciones para hallar los valores del perímetro y área de las distintas figuras geométricas con medidas fijas.
 ### Figuras Geométricas Parte 2
 En esta sección he Cambiado gran parte del código para reemplazar las variables por funciones y de esa manera hacer medidas que puedan cambiar y no estén fijas.
+### Figuras Geométricas Parte 3
+En esta sección he agregado elementos en el HTML para generar una mejor interacción desde la página, también le añadí estilos para que se vea más amigable y fácil de usar."

@@ -5,11 +5,29 @@
     <meta name="description" content="Curso Práctico de Javascript">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Figuras Geométricas</title>
 </head>
 <body>
+    <header class="header">
+        <h1 class="title">Figuras Geométricas</h1>
+        <p class="subtitle">Primer taller del Curso Práctico de JavaScript</p>
+    </header>
+
     <main>
-        <h1>Figuras Geométricas</h1>
+       <section class="sqrForm">
+           <h2 class="formTitle">Calcula el área y perímetro de un cuadrado</h2>
+           <form class="generalForm" action="">
+               <div class="answer">
+                   <div class="square"></div>
+                   <div class="txtAnswer"></div>
+               </div>
+               <label for="inputSquare">Escribe cuánto mide cada lado de tu cuadrado.</label>
+               <input type="number" id="inputSqr">
+               <button type="button" onclick="calculateSquarePerimeter()">Calcular el perímetro</button>
+               <button type="button" onclick="calculateSquareArea()">Calcular el área</button>
+           </form>
+       </section>
     </main>
 
     <script src="scripts/main.js"></script>
