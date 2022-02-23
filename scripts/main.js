@@ -32,7 +32,7 @@ function calculateSquarePerimeter () {
     let sqrValue = sqr.value;
     let perimeter = sqrPerimeter(sqrValue);
     // alert(perimeter);
-    txtAnswer.innerHTML = `<p>El valor del perímetro es:<br> ${perimeter}</p>`;
+    txtAnswer.innerHTML = `<p>El perímetro es:<br> ${perimeter}</p>`;
 
 }
 
@@ -41,5 +41,15 @@ function calculateSquareArea () {
     let sqrValue = sqr.value;
     let area = sqrArea(sqrValue);
     // alert(area);
-    txtAnswer.innerHTML = `<p>El valor del área es:<br> ${area}</p>`;
+    txtAnswer.innerHTML = `<p>El área es:<br> ${area}</p>`;
+}
+
+// Sección de Descuentos
+
+function calculateSalePrice (initialPrice, discount) {
+    
+    const discountedPrice = (initialPrice*discount)/100;
+    const listPrice = initialPrice - discountedPrice;
+
+    return `El precio con descuento es: S/. ${listPrice}`;
 }
