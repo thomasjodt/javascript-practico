@@ -17,9 +17,10 @@
     <main>
         <section class="geometricFigures">
             <h2>Figuras Geométricas</h2>
+
             <article class="box sqrForm">
                 <h2 class="formTitle">Calcula el área y perímetro de un cuadrado</h2>
-                <form class="generalForm" action="">
+                <form class="generalForm">
                     <div class="answer">
                         <div class="txtAnswer" id="sqrAnswer"></div>
                     </div>
@@ -30,19 +31,33 @@
                 </form>
             </article>
 
-            <!-- <article class="triangleForm">
-                <h2 class="formTitle">Calcula el área y perímetro de un cuadrado</h2>
-                <form class="generalForm" action="">
+            <article class=" box triangleForm">
+                <h2 class="formTitle">Calcula el área y perímetro del triángulo</h2>
+                <form class="generalForm">
                     <div class="answer">
-                        <div class="triangle"></div>
-                        <div class="txtAnswer"></div>
+                        <div class="txtAnswer" id="triangleAnswer"></div>
                     </div>
-                    <label for="inputTriangle">Escribe cuánto mide cada lado de tu cuadrado.</label>
-                    <input type="number" id="inputTriangle">
-                    <button type="button" onclick="calculateSquarePerimeter()">Calcular el perímetro</button>
-                    <button type="button" onclick="calculateSquareArea()">Calcular el área</button>
+                    <label for="inputHeight">Escribe cuánto mide la altura</label>
+                    <input type="number" id="inputHeight">
+                    <label for="inputBase">Escribe cuánto mide la base</label>
+                    <input type="number" id="inputBase">
+                    <button type="button" onclick="calculateTrianglePerimeter()">Calcular el perímetro</button>
+                    <button type="button" onclick="calculateTriangleArea()">Calcular el área</button>
                 </form>
-            </article> -->
+            </article>
+
+            <article class=" box circleForm">
+                <h2 class="formTitle">Calcula el área y perímetro del círculo</h2>
+                <form class="generalForm">
+                    <div class="answer">
+                        <div class="txtAnswer" id="circleAnswer"></div>
+                    </div>
+                    <label for="inputRadius">Escribe cuánto mide el radio</label>
+                    <input type="number" id="inputRadius">                    
+                    <button type="button" onclick="calculateCirclePerimeter()">Calcular el perímetro</button>
+                    <button type="button" onclick="calculateCircleArea()">Calcular el área</button>
+                </form>
+            </article>
 
         </section>
 

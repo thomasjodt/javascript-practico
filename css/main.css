@@ -32,9 +32,16 @@ section > h2 {
     padding: 8px 16px;
     border-radius: 16px;
     box-shadow: 4px 4px 8px #00000029, -4px -4px 8px #00000029;
+    color: #fff;
 }
 .sqrForm {
     background-color: #0a7adb;
+}
+.triangleForm {
+    background-color:forestgreen;
+}
+.circleForm {
+    background-color:rebeccapurple;
 }
 .answer {
     height: 64px;
@@ -60,12 +67,13 @@ section > h2 {
     width: 200px;
     border-radius: 12px;
     margin: 16px auto;
-    background-color: #fff;
+    background-color: #ddd;
     padding-left: 12px;
     font-weight: bold;
     font-size: 16px;
     text-align: center;
     outline: none;
+    box-shadow: inset 4px 4px 8px #0000004d, inset -4px -4px 12px #ffffff;
 }
 .generalForm button {
     border: none;

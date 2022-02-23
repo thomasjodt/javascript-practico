@@ -25,7 +25,7 @@ function circleArea (radius) {
 
 // Interactuación con HTML
 
-let txtSqrAnswer = document.getElementById("sqrAnswer");
+let txtSqrAnswer = document.getElementById("sqrAnswer"); // Cuadrado
 
 function calculateSquarePerimeter () {
     let sqr = document.getElementById("inputSqr");
@@ -42,6 +42,60 @@ function calculateSquareArea () {
     let area = sqrArea(sqrValue);
     // alert(area);
     txtSqrAnswer.innerHTML = `<p>El área es:<br> ${area}</p>`;
+}
+
+let txtTriangleAnswer = document.getElementById("triangleAnswer"); // Triángulo
+
+function calculateTrianglePerimeter () {
+    let height = document.getElementById("inputHeight");
+    let heightValue = Number(height.value);
+
+
+    let base = document.getElementById("inputBase");
+    let baseValue = Number(base.value);
+
+    let side3 = Math.sqrt((baseValue**2) + (heightValue**2));
+
+    let perimeter = trianglePerimeter(side3, baseValue, heightValue);
+    
+    txtTriangleAnswer.innerHTML = `<p>El perímetro es: <br> ${perimeter}</p>`;
+
+}
+
+function calculateTriangleArea () {
+    let height = document.getElementById("inputHeight");
+    let heightValue = Number(height.value);
+
+
+    let base = document.getElementById("inputBase");
+    let baseValue = Number(base.value);
+
+    let side3 = Math.sqrt((baseValue**2) + (heightValue**2));
+
+    let area = triangleArea(side3, baseValue, heightValue);
+    
+    txtTriangleAnswer.innerHTML = `<p>El área es: <br> ${area}</p>`;
+
+}
+
+let txtCircleAnswer = document.getElementById("circleAnswer"); // Círculo
+
+function calculateCirclePerimeter () {
+    let circle = document.getElementById("inputRadius");
+    let circleValue = circle.value;
+    let perimeter = circlePerimeter(circleValue);
+    // alert(perimeter);
+    txtCircleAnswer.innerHTML = `<p>El perímetro es:<br> ${perimeter}</p>`;
+
+}
+
+function calculateCircleArea () {
+    let circle = document.getElementById("inputRadius");
+    let circleValue = circle.value;
+
+    let area = circleArea(circleValue);
+    // alert(area);
+    txtCircleAnswer.innerHTML = `<p>El área es:<br> ${area}</p>`;
 }
 
 // Sección de Descuentos
