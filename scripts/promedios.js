@@ -1,12 +1,16 @@
 // Promedios, Mediana y Moda
 const list = [];
 
+
 function addNumber(number) {
+    list.sort((a,b) => a-b);
     let inputList = document.getElementById("inputList");
     let listValue = Number(inputList.value);
     number = listValue;
     list.push(number);
 }
+
+// list.sort((a,b) => a-b);
 
 //Promedio
 function average (array) {
@@ -17,6 +21,7 @@ function average (array) {
 
 //Mediana
 function median(array){
+    list.sort((a,b) => a-b);
     array = list;
     const halfList = Math.floor(array.length/2);
     if(isPair(array.length)) {

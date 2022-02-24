@@ -103,11 +103,31 @@
                 </form>
             </article>
         </section>
+
+        <section class="salarios">
+            <h2>Salarios</h2>
+
+            <article class="box medians">
+                <h2 class="formTitle">Calcular la media de Salarios</h2>
+                <form action="" class="generalForm">
+                    <div class="answer">
+                        <div class="txtAnswer" id="salariesAnswer"></div>
+                    </div>
+                    <label for="inputSalary">Ingresa tus números:</label>
+                    <input type="text" id="inputSalary">
+                    <button class="addButton" type="button" onclick="addNumbers()">+</button>
+                    
+                    <button id="medianGeneral" type="button" onclick="calculateGeneral()">Mediana de salarios</button>
+
+                    <button id="medianTop" type="button" onclick="calculateTop()">Mediana del Top 10%</button>
+                </form>
+            </article>
+        </section>
     </main>
 
     <script src="scripts/figurasGeometricas.js"></script>
     <script src="scripts/descuentos.js"></script>
     <script src="scripts/promedios.js"></script>
-    <script src="scripts/sueldos.js"></script>
+    <script src="scripts/salarios.js"></script>
 </body>
 </html>
