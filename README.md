@@ -66,4 +66,14 @@ Para esta sección hice muchos procedimientos, fue el más difícil.
 # Parte 3
 
 - Declarar la lista (Array).
-- 
+
+
+
+#Taller de Salarios
+En este taller vamos a calcular la mediana de salarios y el top 10% de las personas de una lista.
+
+## Parte 1
+
+En esta sección hice una lista de objetos que contiene el nombre de las personas y su salario, de esta lista de objetos hice un .map() para obtener una lista de solo los salarios.
+Luego ordené ascendentemente la lista de salarios con el método .sort() para poder sacar la mediana.
+Finalmente hice una función para hacer este último cálculo (mediana).

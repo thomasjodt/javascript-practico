@@ -184,3 +184,55 @@ const listCount = {};
 function addNumber(number) {
      list.push(number);
 }
+
+
+// SeECCIÓN DE SALARIOS
+
+const colombia = [];
+colombia.push({
+    name: 'Xavier',
+    salary: 2400,
+    });
+    colombia.push({
+        name: "John",
+        salary: 1000,
+    });
+    colombia.push({
+        name: "Bill",
+        salary: 1400,
+    });
+    colombia.push({
+        name: "Luke",
+        salary: 980,
+    });
+    colombia.push({
+        name: 'Marco',
+        salary: 1200,
+    });
+    colombia.push({
+        name: 'Orlando',
+        salary: 4000,
+    });
+    colombia.push({
+        name: 'Adam',
+        salary: 1000,
+    });
+    colombia.push({
+        name: 'Charles',
+        salary: 2800,
+    });
+
+
+
+const arraySalarios = colombia.map(obj => obj.salary);
+const salariosSorted = arraySalarios.sort((a,b) => a-b);
+
+function medianaSalarios(lista){
+    const mitadLista = Math.floor(lista.length/2);
+    if(mitadLista%2==0) {
+        return (salariosSorted[mitadLista] + salariosSorted[mitadLista - 1])/2;
+    } else {
+        return salariosSorted[mitadLista];
+    }
+}
+console.log(medianaSalarios(salariosSorted));
