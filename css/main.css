@@ -123,3 +123,13 @@ section > h2 {
 .medians button:active {
     box-shadow: inset 4px 4px 16px #00000029, inset -4px -4px 8px #ffffff29;
 }
+#inputList {
+    width: 150px;
+    margin: 16px 10px;
+    display: inline-block;
+}
+.medians .addButton {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}

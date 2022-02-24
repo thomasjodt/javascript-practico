@@ -152,27 +152,35 @@ function calculateAverage (lista) {
     return mediana;
 }
 
-    // Moda
+// Moda
 
-function moda (list) {
-    const listCount = {};
-    const lista = list;
+// Declarar lista
+const lista1 = [1,1,1,2,2,3,3,3,3,3,3,4,5,4,5,4,5,2,3,4,5];
 
-    lista.map(
-        function(element){
-            if(listCount[element]){
-            listCount[element] += 1;
-            } else {
-            listCount[element] =1;
-         }
-        }
-    );
+// Crear el Objeto que contendrá a los números y la cantidad de veces que se repite.
+const lista1Count = {};
 
-    const listCountArray = Object.entries(listCount).sort((a,b) => a[1]-b[1]);
-    const mode = listCountArray[listCountArray.length-1][0];
+// Llenamos el objeto con un método de Array
+lista1.map(function (obj) {
+    if(lista1Count[obj]){
+        lista1Count[obj] += 1;
+    } else {
+        lista1Count[obj] = 1;
+    }
+});
+// Convertimos el objeto en un array y ordenamos sus elementos con las repeticiones de menor a mayor
+const lista1Array = Object.entries(lista1Count).sort((a,b) => a[1] - b[1]);
 
-    return mode;
+// Declaramos la variable que tiene el elemento con más repeticiones
+const moda = lista1Array[lista1Array.length -1][0];
+
+
+
+// Convertir lo anterior en una Función para hacerlo más dinámico
+let inputList = document.getElementById("inputList").value;
+const list = [];
+const listCount = {};
+
+function addNumber(number) {
+     list.push(number);
 }
-
-// Falta hacer la implementación en HTML
-
