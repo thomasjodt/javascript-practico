@@ -63,13 +63,8 @@ Para esta sección hice muchos procedimientos, fue el más difícil.
 	const mode = listCountArray[ListCountArray.length -1][0];
 ```
 
-# Parte 3
 
-- Declarar la lista (Array).
-
-
-
-#Taller de Salarios
+# Taller de Salarios
 En este taller vamos a calcular la mediana de salarios y el top 10% de las personas de una lista.
 
 ## Parte 1
@@ -77,3 +72,7 @@ En este taller vamos a calcular la mediana de salarios y el top 10% de las perso
 En esta sección hice una lista de objetos que contiene el nombre de las personas y su salario, de esta lista de objetos hice un .map() para obtener una lista de solo los salarios.
 Luego ordené ascendentemente la lista de salarios con el método .sort() para poder sacar la mediana.
 Finalmente hice una función para hacer este último cálculo (mediana).
+
+## Parte 2 (final)
+
+En esta sección he terminado todo el proyecto y agregué las funciones para integrar todo en la página y hacerla fácil de usar.

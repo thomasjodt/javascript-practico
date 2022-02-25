@@ -28,6 +28,10 @@ section > h2 {
     background-color: #333;
     padding-bottom: 20px;
 }
+.salaries {
+    background-color:lightseagreen;
+    padding-bottom: 20px;
+}
 .formTitle {
     color: #fff;
 }
@@ -45,6 +49,9 @@ section > h2 {
 }
 .medians {
     background-color: #333;
+}
+.medianSalaries {
+    background-color: lightseagreen;
 }
 .answer {
     height: 64px;
@@ -120,12 +127,19 @@ section > h2 {
 .medians button:active {
     box-shadow: inset 4px 4px 16px #00000029, inset -4px -4px 8px #ffffff29;
 }
+.medianSalaries button {
+    background-color:lightseagreen;
+    box-shadow: 4px 4px 16px #00000029, -4px -4px 8px #ffffff29;
+}
+.medianSalaries button:active {
+    box-shadow: inset 4px 4px 16px #00000029, inset -4px -4px 8px #ffffff29;
+}
 #inputList, #inputSalary {
     width: 150px;
     margin: 16px 10px;
     display: inline-block;
 }
-.medians .addButton {
+.medians .addButton, .medianSalaries .addButton {
     width: 40px;
     height: 40px;
     display: inline-block;

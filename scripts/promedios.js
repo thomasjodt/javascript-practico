@@ -1,4 +1,5 @@
 // Promedios, Mediana y Moda
+
 const list = [];
 
 
@@ -36,23 +37,23 @@ function median(array){
 
 function mode(array){
     array = list;
+    array.sort((a,b) => a-b);
     const listCount = {};
-    array.map(obj => {
+    array.map(function(obj){
         if(listCount[obj]){
-            listCount[obj] += 1;
+            return listCount[obj] += 1;
         } else {
-            listCount[obj] = 1;
+            return listCount[obj] = 1;
         }
     });
-    const listArray = Object.entries(listCount).sort((a,b) => a[1] - b[1]);
-    const mode = listArray[listArray.length -1][0];
-    return mode;
+    const listArray = Object.entries(listCount);
+    return listArray[listArray.length -1][0];
 }
 
 let txtAverageAnswer = document.getElementById("averagesAnswer");
 
 function calculateAverage () {
-    txtAverageAnswer.innerHTML = `<p>El promedio es: <br> ${average()}</p>`;
+    txtAverageAnswer.innerHTML = `<p>El promedio es: <br> ${average().toFixed(2)}</p>`;
 }
 function calculateMedian () {
     txtAverageAnswer.innerHTML = `<p>La mediana es: <br> ${median()}</p>`;
