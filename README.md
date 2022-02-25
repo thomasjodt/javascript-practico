@@ -76,3 +76,7 @@ Finalmente hice una función para hacer este último cálculo (mediana).
 ## Parte 2 (final)
 
 En esta sección he terminado todo el proyecto y agregué las funciones para integrar todo en la página y hacerla fácil de usar.
+
+# Finalización del Proyecto
+En este proyecto he aprendido los métodos de Arrays, el uso de funciones y desarrollar la lógica en la programación.
+Últimos retoques al diseño de la página y Deploy en Github Pages.
