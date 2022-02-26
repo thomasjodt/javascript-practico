@@ -1,4 +1,4 @@
-html {font-family: 'Roboto', sans-serif;}
+html {font-family: 'Roboto', sans-serif; scroll-behavior: smooth;}
 * {box-sizing: border-box; padding: 0; margin: 0;}
 header, footer {
     background-color: #272727;
@@ -6,6 +6,64 @@ header, footer {
     padding: 16px;
     text-align: center;
     line-height: 32px;
+    position: relative;
+    z-index: -1;
+}
+.navbar {
+    align-items: center;
+    background-color: #161616;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-shadow: 0 8px 16px #00000029;
+}
+.list-container.active {
+    transition: 0.7s ease;
+    list-style: none;
+    display: block;
+    background-color: #161616;
+    width: 100%;
+    position: absolute;
+    top: 56px;
+    right: 0;
+}
+.list-container {
+    display: none;
+}
+.list-container a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 0 8px;
+    transition: .2s;
+}
+.nav-item a:hover {
+    background-color: white;
+    color: #161616;
+}
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 32px;
+    width: 32px;
+    margin: 12px;
+}
+.burger-menu span {
+    transition: 0.4s ease;
+    width: 32px;
+    border: 2px solid white;
+    background-color: #fff;
+}
+.burger-menu.active span:nth-child(2) {
+    display: none;
+}
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(11px);
+}
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(11px);
 }
 section > h2 {
     width: 100%;
@@ -14,7 +72,7 @@ section > h2 {
     padding-top: 8px;
     background-color: #c0c0c0;
 }
-.geometricFigures {
+section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -38,8 +96,8 @@ section > h2 {
 .box {
     width: 300px;
     text-align: center;
-    margin: 32px auto;
-    padding: 8px 16px;
+    margin: 32px 8px;
+    padding: 8px 12px;
     border-radius: 16px;
     box-shadow: 4px 4px 8px #00000029, -4px -4px 8px #FFFFFF29;
     color: #fff;
@@ -136,7 +194,7 @@ section > h2 {
 }
 #inputList, #inputSalary {
     width: 150px;
-    margin: 16px 10px;
+    margin: 16px 8px;
     display: inline-block;
 }
 .medians .addButton, .medianSalaries .addButton {
@@ -155,4 +213,15 @@ footer ul li a {
 }
 footer ul li a:hover {
     color: teal;
+}
+
+@media screen and (min-width: 768px){
+    .list-container {
+        display: flex;
+        list-style: none;
+        margin: 0 8px;
+    }
+    .burger-menu {
+        display: none;
+    }
 }

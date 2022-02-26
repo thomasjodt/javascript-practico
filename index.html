@@ -9,13 +9,27 @@
     <title>Curso Práctico de Javascript</title>
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="list-container">
+            <li class="nav-item"><a class="nav-link" href="#taller1">Figuras</a></li>
+            <li class="nav-item"><a class="nav-link" href="#taller2">Descuentos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#taller3">Promedios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#taller4">Salarios</a></li>
+        </ul>
+
+        <div class="burger-menu ">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
     <header class="header">
         <h1 class="title">Calculadoras con Javascript</h1>
         <p class="subtitle">Curso Práctico de JavaScript</p>
     </header>
 
     <main>
-        <section class="geometricFigures">
+        <section class="geometricFigures" id="taller1">
             <h2>Figuras Geométricas</h2>
 
             <article class="box sqrForm">
@@ -61,7 +75,7 @@
 
         </section>
 
-        <section class="sales">
+        <section class="sales" id="taller2">
             <h2>Porcentajes y Descuentos</h2>
             <article class="box priceDiscount">
                 <h2 class="formTitle">Calcula el precio de tus productos con descuento</h2>
@@ -82,7 +96,7 @@
             </article>
         </section>
 
-        <section class="averages">
+        <section class="averages" id="taller3">
             <h2>Promedio, mediana y moda</h2>
 
             <article class="box medians">
@@ -104,7 +118,7 @@
             </article>
         </section>
 
-        <section class="salaries">
+        <section class="salaries" id="taller4">
             <h2>Salarios</h2>
 
             <article class="box medianSalaries">
@@ -133,6 +147,7 @@
         </ul>
     </footer>
 
+    <script src="scripts/main.js"></script>
     <script src="scripts/figurasGeometricas.js"></script>
     <script src="scripts/descuentos.js"></script>
     <script src="scripts/promedios.js"></script>
